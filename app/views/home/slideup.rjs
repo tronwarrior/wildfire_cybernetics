@@ -1,0 +1,5 @@
+page.visual_effect :blind_up, params[:what], :duration => 1.0
+page.replace_html params[:what].to_s + "_link", 
+                  [link_to_remote(image_tag("/images/bullet_arrow_right.png", :size => "16x16", :border => 0), 
+					                :url => { :controller => 'home', :action => params[:what] })]
+

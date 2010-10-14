@@ -1,0 +1,53 @@
+<div id="colOne">
+	<h2>Contact us on here</h2>
+
+	<% form_for(@contact, :html => { :id => "contact_form" }) do |f| %>
+		<%= f.error_messages %>
+		<p>
+	    	Full Name<br />
+	    	<%= f.text_field :name, :size => 45 %>
+	  	</p>
+	  	<p>
+	    	Email address<br />
+	    	<%= f.text_field :email_address, :size => 45 %>
+	  	</p>
+	  	<p>
+	    	Subject<br />
+	    	<%= f.text_field :subject, :size => 45 %>
+	  	</p>
+	  	<p>
+	    	Message<br />
+	    	<%= f.text_area :message %>
+	  	</p>
+	  	<p>
+	    	<%= f.submit 'Send' %>
+	  	</p>
+	<% end %>
+</div>
+<!--
+-->	
+<div id="colTwo">	
+	<div>
+		<h2>Telephone</h2>
+		
+		<p>		
+			<a href="http://www.ringcentral.com" target="Callback_RingMe" 
+							onclick='var wind = window; var winop = wind.open; 
+							winop("http://www.ringcentral.com/ringme/?uc=56679615,0,&s=no&v=2", 
+							"Callback_RingMe", "resizable=no,width=380,height=360"); return false;'><img border="0" 
+							src="https://service.ringcentral.com/picture/ringme/ringme_small.gif" alt="800 number">
+			</a>
+		</p>
+		
+		<p>
+			888.210.9783
+		</p>
+	</div>
+	
+	<p>
+		<h2>Email</h2>
+		<a href="mailto:info@wildfirecybernetics.com">info@wildfirecybernetics.com</a>
+	</p>
+</div>
+
+

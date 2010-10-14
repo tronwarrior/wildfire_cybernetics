@@ -1,0 +1,5 @@
+page.hide :sowhat
+page.replace_html :sowhat, :partial => 'sowhat'
+page.visual_effect :slide_down, :sowhat, :duration => 0.75
+page.replace_html :sowhat_link, [link_to_remote(image_tag("/images/bullet_arrow_down.png", :size => "16x16", :border => 0), 
+					                :url => { :controller => 'home', :action => 'slideup', :what => :sowhat })]

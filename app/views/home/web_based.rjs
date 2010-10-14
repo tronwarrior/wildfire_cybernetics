@@ -1,0 +1,5 @@
+page.hide :web_based
+page.replace_html :web_based, :partial => 'web_based'
+page.visual_effect :blind_down, :web_based, :duration => 0.75
+page.replace_html :web_based_link, [link_to_remote(image_tag("/images/bullet_arrow_down.png", :size => "16x16", :border => 0), 
+					                :url => { :controller => 'home', :action => 'slideup', :what => :web_based })]

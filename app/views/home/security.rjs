@@ -1,0 +1,5 @@
+page.hide :security
+page.replace_html :security, :partial => 'security'
+page.visual_effect :blind_down, :security, :duration => 0.75
+page.replace_html :security_link, [link_to_remote(image_tag("/images/bullet_arrow_down.png", :size => "16x16", :border => 0), 
+					                :url => { :controller => 'home', :action => 'slideup', :what => :security })]

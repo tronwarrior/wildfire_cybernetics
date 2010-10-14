@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">	
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>WildFire Cybernetics</title>
+    <meta name="keywords" content="wildfire cybernetics llc, web apps,
+                                                    ruby on rails, rails, software development, innato inteligencia" />
+    <meta name="description" content="" />
+    <%= javascript_include_tag :defaults %>
+    <%= stylesheet_link_tag 'default' %>
+  </head>
+  <body>
+    <div id="header">
+        <div id="logo">
+            <h1>
+              <span>
+                <a href="http://www.freecsstemplates.org/" target="new">simply</a>
+              </span>
+
+              <a href="http://www.freecsstemplates.org/" target="new">intelligent</a>
+            </h1>
+
+        </div>
+
+      <div id="menu">
+        <ul>
+          <li class="first"><%= link_to 'Home', home_path, :accesskey => 1 %></li>
+          <li><%= link_to 'About', home_path, :accesskey => 4 %></li>
+          <li><%= link_to 'Contact', home_path, :accesskey => 5 %></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="splash">
+        <a href="#">
+          <img src="../../../images/wfc-logo.png" alt="" width="877" height="140" />
+        </a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="content">
+        <%= yield %>
+        <div style="clear: both;">&nbsp;</div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p>
+              Copyright &copy; 2010 WildFire Cybernetics, LLC<br />
+              CSS courtesy of <a href="http://www.freecsstemplates.org" class="link1">Free CSS Templates</a>
+              &nbsp;&mdash;&nbsp;
+              icons courtesy of <a href="http://www.famfamfam.com">FAMFAMFAM</a>
+      </p>
+    </div>
+
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+      var sc_project=4573185;
+      var sc_invisible=1;
+      var sc_partition=56;
+      var sc_click_stat=1;
+      var sc_security="d92a74a1";
+    </script>
+
+    <script type="text/javascript"
+      src="http://www.statcounter.com/counter/counter.js">
+    </script>
+    <noscript>
+    <div class="statcounter">
+      <a title="wordpress visitors href="http://www.statcounter.com/wordpress.org/" target="_blank">
+         <img class="statcounter" src="http://c.statcounter.com/4573185/0/d92a74a1/1/" alt="wordpress visitors" >
+      </a></div></noscript>
+      <!-- End of StatCounter Code -->
+  </body>
+</html>
